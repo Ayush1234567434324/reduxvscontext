@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 
+import Notecontext from '../context/Notecontext';
 export default function Home() {
+    const {state,update }= useContext(Notecontext);
+    const user = state;
+    useEffect(() => {
+    
+    
+      return () => {
+        update();
+        
+      }
+       // eslint-disable-next-line
+    }, [])
+    
+
   return (
-    <div>Home hello</div>
+    
+    <div>{user.Name} I am {user.Role}</div>
   )
 }

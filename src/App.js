@@ -3,9 +3,11 @@ import './App.css';
 import Navbar from './component/Navbar';
 import Home from './component/Home';
 import Friend from './component/Friend';
+import Notestate from './context/Notestate';
 
 function App() {
   return (
+    <Notestate>
     <Router>
       <div className="App">
         <Navbar />
@@ -15,6 +17,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </Notestate>
   );
 }
 

@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Friend() {
   return (
-    <div>Friend</div>
+    <div>Friend how are you</div>
   )
 }
